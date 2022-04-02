@@ -2,7 +2,7 @@
 Minetestmod to remove unknown nodes in Mass
 
 <br>
-![textures/Screenshot 3](textures/screenshot_3.jpg)
+![Screenshot 3](screenshot_3.png)
 <br>
 
 ## Description
