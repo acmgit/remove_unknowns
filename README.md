@@ -1,6 +1,10 @@
 # remove_unknowns
 Minetestmod to remove unknown nodes in Mass
 
+<br>
+![Screenshot 1](textures/screenshot_2.jpg)
+<br>
+
 ## Description
 Remove unknowns is a small mod for minetest, to clean a world from unknown nodes.
 Everbody knows the scenario, a mod on your game gives up to work and you have to
