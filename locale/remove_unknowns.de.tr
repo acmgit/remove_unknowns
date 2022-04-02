@@ -1,0 +1,48 @@
+# textdomain: remove_unknowns
+
+
+### init.lua ###
+
+/ru <Unknown_Nodename> tries to remove all the given Unknown Nodes.=/ru <Unbekannter_Blockname> versucht alle unbekannten Blöcke zu entfernen.
+
+<set_radius> Set's a new Radius.=<set_radius> Setzt einen neuen Radius.
+<show_radius> Show's the current working radius.=Zeigt den aktuellen Arbeitsradius.
+<version> Show's the version of the mod.=<version> zeigt die aktuelle Version des Mods.
+Magnifying Glass=
+Player may remove unkown Nodes in an certain radius.=Spieler darf in einem bestimmtem Radius unbekannte Blöcke löschen.
+Remove unkown <Nodename> in an given radius.=Entfernt unbekannte <Blockname> in einem gewissen Radius.
+
+### lib.lua ###
+
+ Items / Stack.= Stück / Stapel.
+ Points Damage per Second.= Schaden pro Sekunde.
+ isn't a registered Node.= ist kein registrierter Block.
+ to = zu
+Current Radius is set to: @1.=Aktueller Radius ist gesetzt auf: @1
+Deals with = Arbeitet mit
+Has an alpha-channel.=Hat einen Alpha-Kanal
+Is climbable.=Ist besteigbar.
+Is diggable.=Ist abbaubar.
+Is protected: No.=Ist geschützt: Nein.
+Is protected? Yes.=Ist geschützt: Ja
+Is regenerateable.=Ist erneuerbar.
+Is replaceable.=Ist austauschbar.
+Is walkable.=Ist begehbar.
+Light above: =Licht darüber: 
+Light on the Node: =Licht darauf: 
+Light shines trough.=LIcht scheint durch.
+Light under: =Licht darunter: 
+Located at: =Gefunden bei: 
+Max. Radius @= @1.=Max. Radius @= @1.
+Min. Radius @= @1.=Min. Radius @= @1.
+Name of the Node: =Name des Blockes
+Node unknown!=Block unbekannt!
+Node: = Block:
+Pointed on no Node.=
+Radius have to be a value between @1 and @2.=Radius muß ein Wert zwischen @1 und @2 sein.
+Radius is set from @1 to @2=Radius ist von @1 auf @2 gesetzt worden.
+Removing unkown Nodes: =Entfernt unbekannte Blöcke. 
+Shines with Lightlevel =Strahlt Lichtstärke ab 
+Stacks with =Stapelt mit 
+Swap Node =Tausche Block
+With a transparency of =Hat eine Transparenz von 

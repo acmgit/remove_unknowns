@@ -1,0 +1,48 @@
+# textdomain: remove_unknowns
+
+
+### init.lua ###
+
+/ru <Unknown_Nodename> tries to remove all the given Unknown Nodes.=
+
+<set_radius> Set's a new Radius.=
+<show_radius> Show's the current working radius.=
+<version> Show's the version of the mod.=
+Magnifying Glass=
+Player may remove unkown Nodes in an certain radius.=
+Remove unkown <Nodename> in an given radius.=
+
+### lib.lua ###
+
+ Items / Stack.=
+ Points Damage per Second.=
+ isn't a registered Node.=
+ to =
+Current Radius is set to: @1.=
+Deals with =
+Has an alpha-channel.=
+Is climbable.=
+Is diggable.=
+Is protected: No.=
+Is protected? Yes.=
+Is regenerateable.=
+Is replaceable.=
+Is walkable.=
+Light above: =
+Light on the Node: =
+Light shines trough.=
+Light under: =
+Located at: =
+Max. Radius @= @1.=
+Min. Radius @= @1.=
+Name of the Node: =
+Node unknown!=
+Node: =
+Pointed on no Node.=
+Radius have to be a value between @1 and @2.=
+Radius is set from @1 to @2=
+Removing unkown Nodes: =
+Shines with Lightlevel =
+Stacks with =
+Swap Node =
+With a transparency of =
