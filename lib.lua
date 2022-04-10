@@ -165,7 +165,7 @@ function ru.show_node(name, pos)
 		
             if(minetest.registered_nodes[node.name].use_texture_alpha) then
                 ru.print(name, S("Has an alpha-channel."), ru.orange)
-                ru.print(name, S("With a transparency of ") .. 255 - minetest.registered_nodes[node.name].alpha .. " / 255.", ru.light_blue)
+                --ru.print(name, S("With a transparency of ") .. 255 - minetest.registered_nodes[node.name].alpha .. " / 255.", ru.light_blue)
             end
 
             if(minetest.registered_nodes[node.name].sunlight_propagates) then
