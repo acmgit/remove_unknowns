@@ -87,7 +87,7 @@ minetest.register_chatcommand("ru", {
 	end,
 })
 
-minetest.register_chatcommand("su")
+minetest.register_chatcommand("su", {
     privs = {unknown_killer = true},
     params = "<Nodename1> <Nodename1>, <show_radius>, <set_radius>, <version>",
 	description = S("Swap unkown <Nodename1> in an given radius to <Nodename2>.") .. "\n" ..
