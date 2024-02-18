@@ -19,7 +19,7 @@ local MP = minetest.get_modpath(minetest.get_current_modname())
 local S = minetest.get_translator(minetest.get_current_modname())
 
 ru.version = 1
-ru.revision = 0
+ru.revision = 1
 
 ru.MP = MP
 ru.S = S
@@ -61,6 +61,44 @@ minetest.register_chatcommand("ru", {
         local cmd = {}
         cmd = ru.split(string.lower(param))
 
+        if(string.lower(cmd[1]) == "radius") then
+            ru.show_radius(name)
+
+        elseif(string.lower(cmd[1]) == "show") then
+            ru.show_radius(name)
+
+        elseif(string.lower(cmd[1]) == "show_radius") then
+            ru.show_radius(name)
+
+        elseif (string.lower(cmd[1]) == "set_radius") then
+            ru.set_radius(name, cmd[2])
+
+        elseif (string.lower(cmd[1]) == "version") then
+            ru.show_version(name)
+
+        elseif (not cmd[1]) then
+            minetest.chat_send_player(name, "remove_unknowns" .. "\n" ..
+                                            S("/ru <Unknown_Nodename> tries to remove all the given Unknown Nodes."))
+        else
+            ru.kill(name, cmd[1], cmd[2])
+
+        end -- if(cmd[2]
+
+	end,
+})
+
+minetest.register_chatcommand("su")
+    privs = {unknown_killer = true},
+    params = "<Nodename1> <Nodename1>, <show_radius>, <set_radius>, <version>",
+	description = S("Swap unkown <Nodename1> in an given radius to <Nodename2>.") .. "\n" ..
+                  S("<show_radius> Show's the current working radius.")  .. "\n" ..
+                  S("<set_radius> Set's a new Radius.") .. "\n" ..
+                  S("<version> Show's the version of the mod."),
+
+	func = function(name, param)
+        local cmd = {}
+        cmd = ru.split(string.lower(param))
+
         if(cmd[1] == "radius") then
             ru.show_radius(name)
 
@@ -77,16 +115,15 @@ minetest.register_chatcommand("ru", {
             ru.show_version(name)
 
         elseif (not cmd[1]) then
-            minetest.chat_send_player(name, "remove_unknowns" .. "\n" ..
-                                            S("/ru <Unknown_Nodename> tries to remove all the given Unknown Nodes."))
+            minetest.chat_send_player(name, "swap_unknowns" .. "\n" ..
+                                            S("/su <Unknown_Nodename> <Nodename> tries to swap all the given Unknown Nodes into Nodename."))
         else
-            ru.kill(name, cmd[1], cmd[2])
+            ru.swap(name, cmd[1], cmd[2])
 
         end -- if(cmd[2]
 
 	end,
 })
-
 
 minetest.register_chatcommand("what_is", {
     params = "",
