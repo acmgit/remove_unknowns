@@ -89,7 +89,7 @@ minetest.register_chatcommand("ru", {
 
 minetest.register_chatcommand("su", {
     privs = {unknown_killer = true},
-    params = "<Nodename1> <Nodename1>, <show_radius>, <set_radius>, <version>",
+    params = "<Nodename> <Nodename1>, <show_radius>, <set_radius>, <version>",
 	description = S("Swap unkown <Nodename1> in an given radius to <Nodename2>.") .. "\n" ..
                   S("<show_radius> Show's the current working radius.")  .. "\n" ..
                   S("<set_radius> Set's a new Radius.") .. "\n" ..
@@ -114,12 +114,12 @@ minetest.register_chatcommand("su", {
         elseif (cmd[1] == "version") then
             ru.show_version(name)
 
-        elseif (not cmd[1]) then
+        elseif (cmd[1] and cmd[2]) then
+            ru.kill(name, cmd[1], cmd[2])
+
+        else
             minetest.chat_send_player(name, "swap_unknowns" .. "\n" ..
                                             S("/su <Unknown_Nodename> <Nodename> tries to swap all the given Unknown Nodes into Nodename."))
-        else
-            ru.swap(name, cmd[1], cmd[2])
-
         end -- if(cmd[2]
 
 	end,

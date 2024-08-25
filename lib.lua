@@ -73,6 +73,8 @@ function ru.kill(player, node, node2)
 
         end
 
+        print(node2)
+
         for key,value in pairs(nodes) do
             minetest.swap_node(value, {name = node2})
 
